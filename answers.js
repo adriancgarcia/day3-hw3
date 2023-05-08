@@ -94,40 +94,44 @@ const ninjaTurtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo']
 ////////////////////////////////
 // Methods, Revisited
 ////////////////////////////////
-// const favMovies = [
-//     'Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+const favMovies = [
+    'Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
 
-//     console.log(favMovies[0])
+    console.log(favMovies[8])
 
 // 1. use the .sort method Thought question: what did this do to the array? Did it permanently alter it?
-
+console.log(favMovies.sort())
 
 // 2. Use the method pop
-
+console.log(favMovies.pop())
 
 // 3. push "Guardians of the Galaxy"
-
+console.log(favMovies.push('Guardians of the Galaxy'))
 
 // 4. Reverse the array
-
+console.log(favMovies.reverse())
 
 // 5. Use the shift method
-
+console.log(favMovies.shift())
 
 // 6. unshift - what does it return?
-
+console.log(favMovies.unshift())
+// Guardians of the Galaxy was removed from the list and 18 movies are left in the list favMovies.
 
 // 7. splice "Django Unchained" and add "Avatar" (try finding the index of "Django Unchained", instead of counting it yourself) Thought question: did this permanently alter our array?
-
+console.log(favMovies.splice(-4, 1, "Avatar"))
+// Yes, it permanently changed the array because one item was removed and replaced with another item. However, the number of items in the array remains the same so in that respect the array has not been permanently changed.
 
 // 8. slice the last half of the array (challenge yourself and try to programatically determine the middle of the array rather than counting it and hard coding it) - Thought question: did this permanently alter our array?
-
+console.log(favMovies.slice(9))
+// No, slice() does not modify the array. Slice returns just a portion of the array.
 
 // 9. store the value of your slice in a variable, console.log it - Thought question: what is going on here?
-
+const someFavMovies = favMovies.slice(9);
+console.log(someFavMovies);
 
 // 10. console.log your final results
-
+console.log(favMovies)
 
 ////////////////////////////////
 // Where is Waldo
