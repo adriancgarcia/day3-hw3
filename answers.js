@@ -136,6 +136,22 @@ console.log(favMovies)
 ////////////////////////////////
 // Where is Waldo
 ////////////////////////////////
+const whereIsWaldo = [
+    ["Timmy", "Frank"], "Eggbert",
+                    ["Lucinda", "Jacc", "Neff", "Snoop"],
+                    ["Petunia", ["Baked Goods", "Waldo"]]
+                ];
+// Remove Eggbert (hint look at the slice/splice method(s))
+console.log(whereIsWaldo.splice(1, 1))
+
+// Change "Neff" to "No One"
+console.log(whereIsWaldo[1].splice(2, 1, 'No One'))
+// console.log(whereIsWaldo)
+
+
+// Access and console.log "Waldo"
+console.log(whereIsWaldo[2][1][1])
+
 
 
 ////////////////////////////////
