@@ -186,13 +186,34 @@ return smartKitty[Math.floor(Math.random() * 3)];
 
 for (let i =1; i <= 10; i ++) {
     if (i % 2 === 0) {
-        console.log(randomKitty([3]))
+        console.log(randomKitty(3))
     }
 }
-
 
 ////////////////////////////////
 //  Find the Median
 ////////////////////////////////
+
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];// Expected output: => 15
+
+nums.sort((a, b) => a - b)
+
+let median;
+    if (nums.length % 2 != 0) {
+        let midPoint = Math.floor(nums.length / 2)
+        median = nums[midPoint] 
+    } else {
+        let midPoint = Math.floor(nums.length / 2)
+        median = (nums[midPoint] + nums[midPoint - 1]) / 2
+    }
+    
+    console.log(median)
+
+// Found help on the internet to figure this one out.
+    
+
+
+
+
 
 
